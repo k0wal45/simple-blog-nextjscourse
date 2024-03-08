@@ -26,7 +26,7 @@ async function handler(req, res) {
       let client 
 
       try {
-        client = await MongoClient.connect('mongodb+srv://daniel:daniel123@cluster0.ydldjwl.mongodb.net/blog-site?retryWrites=true&w=majority&appName=Cluster0')
+        client = await MongoClient.connect('mongo db connection string')
         
       } catch(error) {
         res.status(500).json({message: 'Could not connect to databse'})
